@@ -1,0 +1,20 @@
+html{
+    background-color: rgb(29, 0, 95);
+}
+*{
+    border: solid 1px rgb(250, 29, 165)
+    }
+main{
+    display: flex; //al momento de poner flex el contenedor pone uno al lado del otro
+    justify-content: center; //para centrar los elementos, escribir juco como abreviación, alinea los elementos al centro
+    align-items: center; //para alinear los elementos verticalmente
+    flex-direction: column; //para que los elementos se pongan uno debajo del otro
+    padding: top 5rem;//para dar espacio entre el borde y el contenido
+
+}
+
+.titulo h1{
+    color: rgb(0, 233, 198);
+    font-family: "BBH Sans Hegarty", sans-serif;
+
+}
