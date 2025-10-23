@@ -1,20 +1,86 @@
-html{
-    background-color: rgb(29, 0, 95);
-}
-*{
-    border: solid 1px rgb(250, 29, 165)
-    }
-main{
-    display: flex; //al momento de poner flex el contenedor pone uno al lado del otro
-    justify-content: center; //para centrar los elementos, escribir juco como abreviación, alinea los elementos al centro
-    align-items: center; //para alinear los elementos verticalmente
-    flex-direction: column; //para que los elementos se pongan uno debajo del otro
-    padding: top 5rem;//para dar espacio entre el borde y el contenido
 
+* {
+    font-family: 'Outfit', sans-serif;
+    border: 1px solid rgba(37, 0, 170, 0);
+    padding: 2px;
+    margin: 0;
+    color: #F5F5DC;
+    box-sizing: border-box;
 }
 
-.titulo h1{
-    color: rgb(0, 233, 198);
-    font-family: "BBH Sans Hegarty", sans-serif;
 
+body {
+    background-color: rgb(16, 79, 25);
+    background-image: radial-gradient(circle at 20% 20%, rgba(22, 239, 6, 0.338) 0%, transparent 25%),
+                      radial-gradient(circle at 80% 70%, rgba(10, 138, 21, 0.441) 0%, transparent 30%),
+                      radial-gradient(circle at 50% 90%, rgba(133, 237, 7, 0.466) 0%, transparent 35%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Lista de proyectos centrada */
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 1rem;
+}
+
+/* Botones de proyectos */
+li a { 
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(3, 47, 18);
+    padding: 0.9rem 1rem;
+    border-radius: 0px;
+    border: solid 1px rgba(0, 0, 0, 0);
+    transition: all .3s ease-in-out;
+    color: #F5F5DC;
+}
+
+li a:hover {
+    background-color: rgb(2, 21, 2);
+    border: solid 1px rgb(220, 242, 230);
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Título principal centrado */
+.titulo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.titulo h1 {
+    color: rgb(255, 255, 255);
+    font-family: "Outfit", serif;
+    font-size: 5rem;
+}
+
+.titulo p {
+    font-style: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.titulo h2 {
+    font-style: light;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(4, 36, 8);
 }
